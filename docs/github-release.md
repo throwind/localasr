@@ -40,8 +40,12 @@ git push origin v0.1.9
 再创建 Release 并上传 DMG：
 
 ```bash
+cp \
+  "dist/release/音频转文本-ONNX-离线版-0.1.9-macOS-arm64.dmg" \
+  "dist/release/localasr-onnx-offline-0.1.9-macOS-arm64.dmg"
+
 gh release create v0.1.9 \
-  "dist/release/音频转文本-ONNX-离线版-0.1.9-macOS-arm64.dmg#macOS arm64 离线安装包" \
+  "dist/release/localasr-onnx-offline-0.1.9-macOS-arm64.dmg#macOS arm64 离线安装包" \
   --verify-tag \
   --title "音频转文本 0.1.9" \
   --notes "修正转写阶段提示，增加 ONNX 模型并行预加载，并修复 FFmpeg 动态库打包。"

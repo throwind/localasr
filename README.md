@@ -4,7 +4,7 @@
 
 ## 下载
 
-[下载 macOS arm64 离线版 0.1.9](https://github.com/throwind/localasr/releases/download/v0.1.9/%E9%9F%B3%E9%A2%91%E8%BD%AC%E6%96%87%E6%9C%AC-ONNX-%E7%A6%BB%E7%BA%BF%E7%89%88-0.1.9-macOS-arm64.dmg)
+[下载 macOS arm64 离线版 0.1.9](https://github.com/throwind/localasr/releases/download/v0.1.9/localasr-onnx-offline-0.1.9-macOS-arm64.dmg)
 
 - 支持 macOS 11 及以上的 Apple Silicon Mac。
 - 安装包未签名。首次打开如被 macOS 阻止，请在 Finder 中右键应用并选择“打开”。
