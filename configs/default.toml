@@ -1,0 +1,27 @@
+[input]
+dir = "./audios"
+recursive = true
+
+[output]
+dir = "./transcripts"
+formats = ["txt", "json", "srt"]
+overwrite = false
+keep_workdir = false
+
+[audio]
+chunk_seconds = 600
+sample_rate = 16000
+channels = 1
+
+[sensevoice]
+engine = "funasr"
+model = "iic/SenseVoiceSmall"
+language = "auto"
+device = "cpu"
+batch_size_s = 60
+merge_vad = true
+merge_length_s = 15
+max_single_segment_ms = 30000
+use_itn = true
+trust_remote_code = true
+speaker_diarization = false
