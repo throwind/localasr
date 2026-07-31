@@ -26,6 +26,12 @@
 
 ## 转写质量
 
+- 按 [ASR 模型演进与评测计划](asr-model-evaluation.md) 建立 30 至 60 分钟中文业务基准集和自动评测报告。
+- 第一批同机对比：SenseVoice int8、中文 Zipformer int8、中文 Paraformer int8；优先验证更小的中文专项模型能否降低会议/面试 CER。
+- 第二批高精度实验：Fun-ASR-Nano int8；Qwen3-ASR 0.6B 和 FireRedASR2S 先观察体积、内存与运行时成熟度。
+- 设计模型配置层：模型 ID、引擎类型、语言、版本、文件清单、SHA-256、下载地址和能力标签统一管理。
+- 产品层规划 `自动`、`中文优先`、`多语种`、`高精度` 四种策略，非默认模型按需下载到 Application Support。
+- 研究 SenseVoice homophone replacer、自定义词典或热词链路，优先改善人名、产品名和英文缩写，不必等待更换大模型。
 - 对比 FunASR/PyTorch 与 ONNX 输出质量：准确率、标点、说话人识别、速度、内存占用。
 - 评估 VAD 和外层切片配合：确认长音频不会因为 600 秒边界破坏上下文。
 - 增加更多测试音频样本：单人、双人访谈、多人会议、背景噪声、英文/粤语/日语/韩语。
